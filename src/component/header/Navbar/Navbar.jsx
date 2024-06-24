@@ -14,12 +14,10 @@ function Navbar() {
                 <NavLink>Возможности</NavLink>
                 <NavLink>Шаги</NavLink>
                 <NavLink>
-                    <button>
                         <select name="" id="">
                             <option value="uz">UZ</option>
                             <option value="ru">RU</option>
                         </select>
-                    </button>
                 </NavLink>
             </ul>
 
