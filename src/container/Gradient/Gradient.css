@@ -1,0 +1,8 @@
+.gradient-text {
+    background: linear-gradient(269.26deg, #5D7AE6 50%, #C40EEC 74%, #F8893F 98.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+  }

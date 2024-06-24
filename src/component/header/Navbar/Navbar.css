@@ -7,13 +7,17 @@ nav{
     border: Mixed solid rgba(37, 37, 37, 1);
     border-radius: 15px;
     height: 60px;
-    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(118, 118, 118, 0.4) inset;
+    padding: 10px;
+    position: fixed;
+    margin-top:30px;
+    top: 0;
 }
 
 nav ul{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap:50px;
 }
 
 a{
@@ -28,5 +32,22 @@ nav ul select{
     background-color: transparent;
     border: none;
     outline: none;
+    color: white;
 }
 
+nav ul select option{
+    background-color: transparent;
+}
+
+nav button{
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+nav button > *{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 1);
+}

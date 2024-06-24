@@ -3,4 +3,70 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
+    color: white;
+    height: 90vh;
+}
+
+.header-line{
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+}
+
+.header-top-right-line{
+    background-image: url(../../assets/header-top-line.png);
+    top: 0;
+    right: 0;
+}
+.header-top-left-line{
+    background-image: url(../../assets/header-top-leftline.png);
+    top: 0;
+    left:100px;
+    width: 200px;
+}
+
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.header-first-child{
+    width: 750px;
+}
+.header-second-child{
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-second-child p{
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.header-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-btn > button{
+    height: 45px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    font-size: 11px;
+}
+
+.header-btn button:first-child{
+    background-color: rgba(0, 105, 244, 1);
+    color: white;
 }
