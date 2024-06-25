@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom"
 import Home from "./views/Home/Home"
 
 
@@ -5,7 +6,9 @@ function App() {
 
   return (
     <>
-    <Home />
+    <Routes>
+      <Route element={<Home />} path="/"/>
+    </Routes>
     </>
   )
 }

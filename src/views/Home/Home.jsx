@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import Header from '../../component/header/Header'
+import OneID from './OneID/OneID'
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
             <div className="home-container">
                 <Header />
             </div>
+            <OneID />
         </div>
     )
 }
