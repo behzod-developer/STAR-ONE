@@ -1,0 +1,78 @@
+import React from 'react'
+import './OneID.css'
+
+function OneID_border() {
+    return (
+        <div className='one-id-border'>
+
+            <div className='one-id-parent one-parent'>
+
+                <div className='one-id-first'>
+                    <div className="one-line-radio one_1"> Единая <br /> регистрация</div>
+                    <div className="one-parent">
+                        <div className='one-height-ml one-width-xxl one-right one-bottom'>
+                            <div className='one_2 one-line-radio'>Персонализированный профиль</div>
+                        </div>
+                        <div className='one-width-ml'>
+                            <div className='one-height'></div>
+                            <div className='one-top one-height'></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='one-id-second'>
+                    <div className='one-radio one-back one-shadow'>
+                        1ID
+                    </div>
+                </div>
+
+
+
+                <div className='one-id-third one-column one-parent'>
+
+                    <div className='one-width-max one-height-xxxl  one-parent'>
+                        <div className='one-width-xxxl  one-height-xxl'></div>
+                        <div className='one-height-xxxl one-left one-top one-width-xxl '>
+                            <div className="one_3 one-line-radio">
+                                Безопасность <br />
+                                ваших данных
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=' one-height-xxxl one-width-max one-parent'>
+                        <div className='one-height-xxxl one-top one-right one-width-ml'></div>
+                        <div className='one-height-xxxl one-bottom one-width-xxxl'>
+                            <div className="one_4 one-line-radio">
+                            Единый <br /> Идентификатор <br /> Платформы
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div className='one-id-parent-2 one-margin-top'>
+                <div className='one-height-ml one-parent '>
+                    <div className='one-height-xxxl one-width-xxxl'>
+                        <div className='one-height-mid one-bottom one-width-xxxl'></div>
+                        <div className='one-height-mid one-width-xxxl'>
+                            <div className='one-line-radio one_5'>
+                            Единая история <br /> действий
+                            </div>
+                        </div>
+                    </div>
+                    <div className='one-width-xxxl one-left one-bottom one-height-ml'>
+                        <div className='one-line-radio one_6'>Управление <br /> Контролем доступа</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default OneID_border

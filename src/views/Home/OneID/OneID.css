@@ -1,0 +1,191 @@
+.one-bottom{
+    border-bottom: 2px solid rgba(0, 178, 255, 1);
+}
+.one-left{
+    border-left: 2px solid rgba(0, 178, 255, 1);
+}
+.one-right{
+    border-right: 2px solid rgba(0, 178, 255, 1);
+}
+.one-top{
+    border-top: 2px solid rgba(0, 178, 255, 1);
+}
+
+.one-margin-top{
+    margin-top: -50px;
+}
+
+.one-id-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.one-column{
+    flex-direction: column;
+}
+
+.one-height-xl{
+    height: 50px;
+}
+
+.one-height-xxl{
+    height: 100px;
+}
+
+.one-height-mid{
+    height: 75px;
+}
+
+.one-height-xxxl{
+    height: 150px;
+}
+
+.one-height-ml{
+    height: 300px;
+}
+
+.one-height-max{
+    height: 400px;
+}
+
+.one-width-ml{
+    width: 300px;
+}
+
+.one-width-max{
+    width: 400px;
+}
+
+.one-width-xxl{
+    width: 100px;
+}
+
+.one-width-xl{
+    width: 50px;
+}
+
+.one-width-xxxl{
+    width: 150px;
+}
+
+.one-parent{
+    align-items: center;
+    display: flex;
+}
+
+.one-id-parent-2{
+    width: 300px;
+    position: relative;
+}
+
+.one-radio{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 65px;
+    font-size:60px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.one-back{
+    background-color: rgba(0, 105, 244, 1);
+    color: white;
+}
+
+.one-justify{
+    justify-content: center;
+}
+
+.one-shadow{
+    box-shadow: 0px 0px 70px 0px rgba(0, 105, 244, 0.7);
+}
+
+
+.one-line-radio{
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 178, 255, 1);
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    position: absolute;
+}
+
+.one-id-first,
+.one-id-third{
+    position: relative;
+}
+
+.one_1{
+   top: -160px;
+   left: 20px;
+}
+
+.one_2{
+    bottom: -70px;
+    left: -160px;
+    font-size: 15px;
+}
+
+.one_3{
+    top: -80px;
+    right: -10px;
+}
+
+.one_4{
+    bottom: -80px;
+    right: -160px;
+}
+
+.one_5{
+    left: -160px;
+    top: 70px;
+}
+
+.one_6{
+    bottom: -75px;
+    right: -160px;
+}
+
+
+
+
+.one-id-text >*{
+    color: white;
+    text-align: center;
+}
+
+.one-id-text h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.one-text{
+    color: rgba(116, 116, 116, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.one-id,
+.one-id-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.one-id-text{
+    gap: 20px;
+}
+
+.one-id-container{
+    width: 100%;
+    padding-top: 250px;
+}

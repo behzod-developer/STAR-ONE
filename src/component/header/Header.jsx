@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar'
 import './Header.css'
 import { RxSwitch } from "react-icons/rx";
 import Gradient from '../../container/Gradient/Gradient';
+import Header_data from './header-bottom/Header_data';
 
 function Header() {
   return (
@@ -24,6 +25,9 @@ function Header() {
             <button>Связаться с нами</button>
           </div>
         </div>
+      </div>
+      <div className="header-second">
+        <Header_data />
       </div>
     </header>
   )
