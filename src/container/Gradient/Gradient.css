@@ -3,6 +3,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat' sans-serif;
-    font-size: 80px;
+    font-size: 260%;
     font-weight: 800;
+    align-items: center;
+  }
+
+  .home-switch{
+    position: relative;
+    bottom: -20px;
   }

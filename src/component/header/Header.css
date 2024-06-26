@@ -6,12 +6,12 @@ header{
     width: 100%;
     position: relative;
     color: white;
-    height: 150vh;
+    height: 140vh;
 }
 
 .header-line{
     background-size: cover;
-    width: 400px;
+    width: 25%;
     height: 500px;
     position: absolute;
 }
@@ -24,8 +24,8 @@ header{
 .header-top-left-line{
     background-image: url(../../assets/header-top-leftline.png);
     top: 0;
-    left:100px;
-    width: 200px;
+    left:200px;
+    width: 10%!important;
 }
 
 
@@ -34,13 +34,17 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 100;
+    width: 100%;
+    gap: 30px;
 }
 
 .header-first-child{
-    width: 750px;
+    width:100%;
+    min-width: 500px;
+    max-width: 900px;
 }
 .header-second-child{
-    width: 312px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -48,8 +52,9 @@ header{
 }
 
 .header-second-child p{
-    line-height: 24px;
+    line-height: 30px;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .header-btn{
@@ -60,11 +65,11 @@ header{
 }
 
 .header-btn > button{
-    height: 45px;
-    width: 130px;
+    height: 60px;
+    width: 280px;
     border-radius: 15px;
     border: none;
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .header-btn button:first-child{
@@ -74,7 +79,8 @@ header{
 
 .header-data{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 170px;
+    width: 100%;
 }
 
 .header-logo-image{
@@ -83,11 +89,13 @@ header{
     justify-content: center;
     gap: 70px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .header-logo-image > img{
-    width: 64px;
-    height: 64px;
+    width: 100%;
+    min-width: 130px;
+    max-width: 150px;
 }
 
 .header-data-2{
@@ -104,9 +112,13 @@ header{
 }
 
 .header-data-2 h1{
-    font-size: 48px;
+    font-size: 54px;
 }
 
 .header-data-2 span{
-    font-size: 10px;
+    font-size: 14px;
+}
+
+.header-data h5{
+    font-size: 15px;
 }
