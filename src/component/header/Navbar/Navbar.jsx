@@ -5,19 +5,20 @@ import './Navbar.css'
 function Navbar() {
     return (
         <nav>
-
-            <img src="" alt="Logo.png" />
-
+            <li className='logo'>
+                <img src="" alt="Logo.png" />
+                <span>Business</span>
+            </li>
             <ul>
                 <NavLink>Модели</NavLink>
                 <NavLink>Экосистема</NavLink>
                 <NavLink>Возможности</NavLink>
                 <NavLink>Шаги</NavLink>
                 <NavLink>
-                        <select name="" id="">
-                            <option value="uz">UZ</option>
-                            <option value="ru">RU</option>
-                        </select>
+                    <select name="" id="">
+                        <option value="uz">UZ</option>
+                        <option value="ru">RU</option>
+                    </select>
                 </NavLink>
             </ul>
 

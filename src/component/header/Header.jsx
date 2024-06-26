@@ -15,7 +15,7 @@ function Header() {
       <div className="header-text">
         <div className="header-first-child">
           <h1>
-            <Gradient text={`Мы поддерживаем \n  рooст вашего \n бизнеса`} />
+            <Gradient text={`Мы поддерживаем \n  р`} text_2={`ст вашего \n бизнеса`} />
           </h1>
         </div>
         <div className="header-second-child">
