@@ -4,6 +4,8 @@ import './Header.css'
 import { RxSwitch } from "react-icons/rx";
 import Gradient from '../../container/Gradient/Gradient';
 import Header_data from './header-bottom/Header_data';
+// import Swiper from '../../container/Swiper/Swiper';
+import SwiperCard from '../../container/Swiper/SwiperCard';
 
 function Header() {
   return (
@@ -15,7 +17,7 @@ function Header() {
       <div className="header-text">
         <div className="header-first-child">
           <h1>
-            <Gradient text={`Мы поддерживаем \n  р`} text_2={`ст вашего \n бизнеса`} />
+            <Gradient text={`Мы поддерживаем  `} text_4={ `р`} text_2={`ст вашего `} text_3={`бизнеса`} />
           </h1>
         </div>
         <div className="header-second-child">
@@ -29,6 +31,7 @@ function Header() {
       <div className="header-second">
         <Header_data />
       </div>
+      <SwiperCard />
     </header>
   )
 }

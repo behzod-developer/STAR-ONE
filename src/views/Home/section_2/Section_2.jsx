@@ -5,6 +5,7 @@ import progress from "../../../assets/tabler_chart-pie-filled.png";
 import { VscTriangleDown } from "react-icons/vsc";
 import { ImArrowUp } from "react-icons/im";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { BiLike } from "react-icons/bi";
 
 function Section_2() {
   return (
@@ -67,9 +68,17 @@ function Section_2() {
             <div className="section_2-back-box_3">
               <h3>Отношение</h3>
               <p>Постройте взаимовыгодные связи с вашими клиентами</p>
+              <div className="section_2-bottom-dot-line">
+                <div className="section_2-bottom-cyrcle"></div>
+                <div className="section_2-dot-1"></div>
+                <div className="section_2-bottom-cyrcle-2">
+                <BiLike />
+                </div>
+              </div>
             </div>
+
             <div className="section_2-back-box_4">
-              <h3>И еще много сервисов</h3>
+              <h3>И еще <br /> много <br /> сервисов</h3>
               <div className="narrow_2">
                 <button>
                   <IoIosArrowRoundForward />

@@ -1,0 +1,69 @@
+ .swiper_1 {
+    background: linear-gradient(269.24deg, #5D7AE6 -62.9%, rgba(196, 14, 236, 0.798958) -11.58%, rgba(198, 141, 255, 0.9) 98.21%);
+}
+
+.swiper_2 {
+    background: linear-gradient(250deg, #5D7AE6 7.1%, rgba(0, 168, 170, 0.798958) 59.91%, rgba(240, 246, 0, 0.9) 93.93%);
+}
+
+.swiper_3 {
+    background: linear-gradient(204.92deg, #5D7AE6 -23.15%, rgba(182, 80, 1, 0.798958) 23.37%, rgba(252, 190, 34, 0.9) 86.59%);
+}
+
+.swiper_4 {
+    background: linear-gradient(269.24deg, rgba(0, 105, 244, 0.8) -21.84%, rgba(43, 127, 255, 0.9) 26.51%, #5D7AE6 55.73%);
+}
+
+.swiper_5 {
+    background: linear-gradient(269.24deg, #5D7AE6 -62.9%, rgba(196, 14, 236, 0.798958) -11.58%, rgba(248, 137, 63, 0.9) 98.21%);
+}
+
+
+ .swiper-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto;
+    width: 100%;
+    margin: 50px;
+  }
+  
+  .swiper-card {
+    /* max-width: 270px; */
+    
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease;
+    overflow: hidden; /* Ensure content stays within the card */
+  }
+  
+  .swiper-text-container {
+    width: 100%; /* Ensures the text container spans the width of the card */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .swiper-text-container.visible {
+    height: auto; /* Allow the container to grow to fit the text */
+  }
+  
+  .swiper-text {
+    visibility: visible;
+    transition: visibility 0.5s 0.5s;
+    width: 100%; /* Delay visibility change until after height transition */
+  }
+  
+  .swiper-text-container.visible .swiper-text {
+    visibility: visible;
+    transition: visibility 0.5s; /* Ensure smooth visibility transition */
+  }
+  

@@ -1,0 +1,96 @@
+.one-id-login-container {
+    background-image: url(../../../assets/landing_page_footer.png);
+    height: 150vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.dot-star{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+
+.dot-star-1{
+    top: 100px;
+    right: 200px;
+}
+.dot-star-2{
+    top: 250px;
+    left:350px;
+}
+.dot-star-3{
+    top: 400px;
+    right: 350px;
+}
+.dot-star-4{
+    top: 400px;
+    left: 200px;
+}
+.dot-star-5{
+    top: 100px;
+    left: 200px;
+}
+
+
+
+.one-id-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.one-id-login form {
+    width: 500px;
+    height: 520px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 12px 20px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1) inset;
+    border: 1px solid rgba(94, 94, 94, 1);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.one-id-login form h3 {
+    color: white;
+    font-size: 24px;
+}
+
+.one-id-login form p {
+    color: rgba(165, 165, 165, 1);
+    width: 90%;
+    font-size: 10px;
+}
+
+.one-id-login form>input,
+.one-id-login form>button {
+    width: 80%;
+    padding: 15px 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+}
+
+.one-id-login form>input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.one-id-login form>button {
+    margin-top: 20px;
+    color: white;
+    background-color: royalblue;
+    font-weight: 600;
+}

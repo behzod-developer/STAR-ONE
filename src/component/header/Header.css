@@ -6,7 +6,7 @@ header{
     width: 100%;
     position: relative;
     color: white;
-    height: 140vh;
+    height: 210vh;
 }
 
 .header-line{
@@ -24,8 +24,8 @@ header{
 .header-top-left-line{
     background-image: url(../../assets/header-top-leftline.png);
     top: 0;
-    left:200px;
-    width: 10%!important;
+    left:100px;
+    width: 15%!important;
 }
 
 
@@ -34,7 +34,7 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 100;
-    width: 100%;
+    width: 90%;
     gap: 30px;
 }
 
@@ -54,7 +54,7 @@ header{
 .header-second-child p{
     line-height: 30px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .header-btn{
@@ -66,7 +66,7 @@ header{
 
 .header-btn > button{
     height: 60px;
-    width: 280px;
+    width: 200px;
     border-radius: 15px;
     border: none;
     font-size: 16px;
@@ -94,7 +94,7 @@ header{
 
 .header-logo-image > img{
     width: 100%;
-    min-width: 130px;
+    min-width: 100px;
     max-width: 150px;
 }
 

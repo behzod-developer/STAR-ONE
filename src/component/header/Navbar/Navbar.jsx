@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
+import { changeLanguage } from 'i18next'
 
 function Navbar() {
     return (
@@ -15,9 +16,9 @@ function Navbar() {
                 <NavLink>Возможности</NavLink>
                 <NavLink>Шаги</NavLink>
                 <NavLink>
-                    <select name="" id="">
-                        <option value="uz">UZ</option>
-                        <option value="ru">RU</option>
+                    <select name="language" onChange={changeLanguage} id="">
+                        <option value="ru">🇷🇺</option>
+                        <option value="uz">🇺🇿</option>
                     </select>
                 </NavLink>
             </ul>

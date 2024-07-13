@@ -1,0 +1,29 @@
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media > *{
+    font-size: 30px;
+    color: gray;
+}
+
+.landing-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 10%;
+    border-bottom: 3px solid rgba(142, 102, 255, 1);
+}
+
+
+
+.landing-footer > .logo{
+    display: flex;
+    align-items: center;
+}
+
+.landing-footer > *{
+    color: white;
+}
