@@ -74,13 +74,38 @@
 }
 
 .one-id-login form>input,
-.one-id-login form>button {
+.one-id-login form>button,
+.one-id-login-first {
     width: 80%;
     padding: 15px 15px;
     border-radius: 15px;
     border: none;
     font-size: 16px;
 }
+
+.one-id-login-first{
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.one-id-login-first span{
+    color: black;
+}
+
+.one-id-login-first input{
+    width: 100%;
+    border: none;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.one-id-login-first input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 
 .one-id-login form>input:focus {
     border: none;

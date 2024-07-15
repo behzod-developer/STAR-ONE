@@ -1,14 +1,2 @@
-export const header_data = [
-    {
-        number: `+${15}`,
-        text:'активных продавцов'
-    },
-    {
-        number: `+${150}`,
-        text:'Продаж товаров в день'
-    },
-    {
-        number: `${40}%`,
-        text:'Рост пользователей'
-    }
-]
+export const header_static_data = 'https://api.star-one.uz/company/statistic'
+export const header_static_data_demo = 'http://localhost:9000/static_data'

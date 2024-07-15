@@ -32,7 +32,10 @@ function OneIDLogin() {
                         в 1ID Business!</h3>
                     <p>Если у вас остались вопросы или вам нужна дополнительная информация, не стесняйтесь обращаться! Наша служба поддержки всегда готова помочь вам. Мы ценим ваш интерес к нашей платформе и стремимся обеспечить вас наилучшим опытом. Вместе мы создаем успешное сотрудничество!</p>
                     <input required placeholder='Имя' name='userName' type="text" />
+                    <div className="one-id-login-first">
+                    <span>+998</span>
                     <input required placeholder='Номер телефона' name='phoneNumber' type="tel" />
+                    </div>
                     <button>Отправить</button>
                 </form>
             </div>
