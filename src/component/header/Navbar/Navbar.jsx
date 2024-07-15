@@ -2,8 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { changeLanguage } from 'i18next'
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng.target.value);
+    };
     return (
         <nav>
             <li className='logo'>
@@ -11,10 +17,10 @@ function Navbar() {
                 <span>Business</span>
             </li>
             <ul>
-                <NavLink>Модели</NavLink>
-                <NavLink>Экосистема</NavLink>
-                <NavLink>Возможности</NavLink>
-                <NavLink>Шаги</NavLink>
+                <NavLink>{t('landing_models')}</NavLink>
+                <NavLink>{t('landing_ecosystem')}</NavLink>
+                <NavLink>{t('landing_option')}</NavLink>
+                <NavLink>{t('landing_move')}</NavLink>
                 <NavLink>
                     <select name="language" onChange={changeLanguage} id="">
                         <option value="ru">🇷🇺</option>
@@ -23,7 +29,7 @@ function Navbar() {
                 </NavLink>
             </ul>
 
-            <button>Войти</button>
+            <button>{t('landing_sigh')}</button>
 
         </nav>
     )

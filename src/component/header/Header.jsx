@@ -6,8 +6,14 @@ import Gradient from '../../container/Gradient/Gradient';
 import Header_data from './header-bottom/Header_data';
 // import Swiper from '../../container/Swiper/Swiper';
 import SwiperCard from '../../container/Swiper/SwiperCard';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng.target.value);
+    };
   return (
     <header>
       <Navbar />
@@ -17,7 +23,7 @@ function Header() {
       <div className="header-text">
         <div className="header-first-child">
           <h1>
-            <Gradient text={`Мы поддерживаем  `} text_4={ `р`} text_2={`ст вашего `} text_3={`бизнеса`} />
+            <Gradient text={t('header_main_title')} />
           </h1>
         </div>
         <div className="header-second-child">
