@@ -1,51 +1,86 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useTranslation } from 'react-i18next';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-const ToggleCard = () => {
-  const [visibleDiv, setVisibleDiv] = useState(null);
+export default function AccordionUsage() {
+  const { t } = useTranslation()
 
-  const handleButtonClick = (divIndex) => {
-    setVisibleDiv(divIndex);
-  };
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#00000000",
+        textColor: 'white'
+      },
+    },
+  });
+
 
   return (
-    <div style={styles.container}>
-      {[1, 2, 3, 4, 5].map((index) => (
-        <div key={index} style={styles.divContainer}>
-          <button onClick={() => handleButtonClick(index)} style={styles.button}>
-            Show Text {index}
-          </button>
-          {visibleDiv === index && <div style={styles.textDiv}>This is the text for div {index}</div>}
-        </div>
-      ))}
+    <div className='quetion-and-answer-container'>
+      <ThemeProvider theme={theme}>
+        <Accordion
+          sx={{ backgroundColor: 'transparent', color: 'white', borderBottom:'1px solid grey', padding:'10px 0' }}>
+          <AccordionSummary
+            sx={{ fontSize: '23px', fontWeight: '500' }}
+            expandIcon={<ExpandMoreIcon sx={{ backgroundColor: 'transparent', color: 'white' }} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+            color='primary'
+          >
+            {t('landing_question_1')}
+          </AccordionSummary>
+          <AccordionDetails>
+            {t('landing_answer_1')}
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: 'transparent', color: 'white', borderBottom:'1px solid grey', padding:'10px 0' }}>
+          <AccordionSummary
+            sx={{ fontSize: '23px', fontWeight: '500' }}
+            expandIcon={<ExpandMoreIcon sx={{ backgroundColor: 'transparent', color: 'white' }} />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            {t('landing_question_2')}
+          </AccordionSummary>
+          <AccordionDetails>
+            {t('landing_answer_2')}
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: 'transparent', color: 'white', borderBottom:'1px solid grey', padding:'10px 0' }}>
+          <AccordionSummary
+            sx={{ fontSize: '23px', fontWeight: '500' }}
+            expandIcon={<ExpandMoreIcon sx={{ backgroundColor: 'transparent', color: 'white' }} />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            {t('landing_question_3')}
+          </AccordionSummary>
+          <AccordionDetails>
+            {t('landing_answer_3')}
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: 'transparent', color: 'white', borderBottom:'1px solid grey', padding:'10px 0' }}>
+          <AccordionSummary
+            sx={{ fontSize: '23px', fontWeight: '500' }}
+            expandIcon={<ExpandMoreIcon sx={{ backgroundColor: 'transparent', color: 'white' }} />}
+            aria-controls="panel2-content"
+            id="panel2-header"
+          >
+            {t('landing_question_4')}
+          </AccordionSummary>
+          <AccordionDetails>
+            {t('landing_answer_4')}
+          </AccordionDetails>
+        </Accordion>
+      </ThemeProvider>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    marginTop: '20px',
-  },
-  divContainer: {
-    margin: '10px 0',
-    textAlign: 'center',
-  },
-  button: {
-    padding: '10px 20px',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-  },
-  textDiv: {
-    marginTop: '10px',
-    padding: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-  }
-};
-
-export default ToggleCard;
+}

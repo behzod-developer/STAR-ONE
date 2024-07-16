@@ -1,8 +1,7 @@
 import React from 'react'
 import './Question_and_aswer.css'
-import { MdKeyboardArrowDown } from "react-icons/md";
-import ToggleCard from '../../../container/ToggleCard/ToggleCard';
 import { useTranslation } from 'react-i18next';
+import AccordionUsage from '../../../container/ToggleCard/ToggleCard';
 
 function Question_and_answer() {
 
@@ -11,7 +10,7 @@ function Question_and_answer() {
     return (
         <div className='question_and_answer'>
             <div className="question_and_answer-container">
-                <div className="question-card">
+                {/* <div className="question-card">
                     <h4>{t('landing_question_1')}</h4>
                     <MdKeyboardArrowDown />
                 </div>
@@ -26,7 +25,9 @@ function Question_and_answer() {
                 <div className="question-card">
                     <h4>{t('landing_question_4')}</h4>
                     <MdKeyboardArrowDown />
-                </div>
+                </div> */}
+
+                <AccordionUsage />
             </div>
         </div>
     )
