@@ -6,8 +6,24 @@ import { VscTriangleDown } from "react-icons/vsc";
 import { ImArrowUp } from "react-icons/im";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BiLike } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 
 function Section_2() {
+
+  const { t } = useTranslation()
+
+  const jsonData = {
+    message: t('landing_option_5')
+  };
+
+  // Split the message by newline character and map to create line breaks
+  const messageWithLineBreaks = jsonData.message.split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+
   return (
     <div className="section_2-container">
       <div className="section_2-parent section_2-between">
@@ -15,26 +31,22 @@ function Section_2() {
           <div className="section_2-line"></div>
           <div className="section_2-header-text">
             <h2>
-              Посмотрите и узнайте лучшие услуги, которые мы предоставляем
+              {t('landing_header_option_1')}
             </h2>
           </div>
         </div>
         <div className="section_2-header-text-2">
           <p>
-            Используйте уникальные инструменты для продвижения и повышения
-            видимости ваших товаров. Увеличьте продажи и привлекайте больше
-            клиентов, создавая успешный бизнес вместе с нами!
+            {t('landing_header_option_2')}
           </p>
         </div>
       </div>
 
       <div className="section_2-statistic">
         <div className="section_2-left-box">
-          <h4>Управление</h4>
+          <h4>{t('landing_option_1')}</h4>
           <p>
-            Простота и эффективность в одном месте! Управляйте вашими товарами
-            легко - добавляйте, обновляйте и контролируйте их статус, предлагая
-            клиентам непревзойденный опыт покупок.
+            {t('landing_option_info_1')}
           </p>
           <div className="section_2-cards">
             <div className="section_2-card-1">
@@ -49,36 +61,34 @@ function Section_2() {
         <div className="section_2-right-box">
           <div className="section_2-back-top">
             <div className="section_2-back-box_1">
-              <h3>Повышение</h3>
-              <p>Максимизируйте свои возможности!</p>
+              <h3>{t('landing_option_2')}</h3>
+              <p>{t('landing_option_info_2')}</p>
               <div>
                 <ImArrowUp className="narrow" />
                 <b>100%</b>
               </div>
             </div>
             <div className="section_2-back-box_2">
-              <h3>Статистика</h3>
-              <p>
-                Следите за успехом вашего бизнеса в режиме реального времени
-              </p>
+              <h3>{t('landing_option_3')}</h3>
+              <p>{t('landing_option_info_3')}</p>
               <img src={statistica} alt="img" />
             </div>
           </div>
           <div className="section_2-back-bottom">
             <div className="section_2-back-box_3">
-              <h3>Отношение</h3>
-              <p>Постройте взаимовыгодные связи с вашими клиентами</p>
+              <h3>{t('landing_option_4')}</h3>
+              <p>{t('landing_option_info_4')}</p>
               <div className="section_2-bottom-dot-line">
                 <div className="section_2-bottom-cyrcle"></div>
                 <div className="section_2-dot-1"></div>
                 <div className="section_2-bottom-cyrcle-2">
-                <BiLike />
+                  <BiLike />
                 </div>
               </div>
             </div>
 
             <div className="section_2-back-box_4">
-              <h3>И еще <br /> много <br /> сервисов</h3>
+              <h3>{messageWithLineBreaks}</h3>
               <div className="narrow_2">
                 <button>
                   <IoIosArrowRoundForward />

@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import './OneIDLogin.css'
 import Question_and_answer from '../question_and_answer/Question_and_answer'
 import Footer from '../../../component/Footer/Footer'
+import { useTranslation } from 'react-i18next'
 
 function OneIDLogin() {
     
     const [oneIdData, setOneIdData] = useState()
+    const {t} = useTranslation()
 
     const addOneIdHandler = e => {
         e.preventDefault()
@@ -16,6 +18,8 @@ function OneIDLogin() {
 
         
     }
+
+
 
     console.log(oneIdData)
 
@@ -28,15 +32,14 @@ function OneIDLogin() {
             <div className="dot-star-5 dot-star"></div>
             <div className="one-id-login">
                 <form onSubmit={addOneIdHandler} action="">
-                    <h3>Добро пожаловать <br />
-                        в 1ID Business!</h3>
-                    <p>Если у вас остались вопросы или вам нужна дополнительная информация, не стесняйтесь обращаться! Наша служба поддержки всегда готова помочь вам. Мы ценим ваш интерес к нашей платформе и стремимся обеспечить вас наилучшим опытом. Вместе мы создаем успешное сотрудничество!</p>
-                    <input required placeholder='Имя' name='userName' type="text" />
+                    <h3>{t('landing_header_request')}</h3>
+                    <p>{t('landing_request_info')}</p>
+                    <input required placeholder={t('landing_request_1')} name='userName' type="text" />
                     <div className="one-id-login-first">
                     <span>+998</span>
-                    <input required placeholder='Номер телефона' name='phoneNumber' type="tel" />
+                    <input required placeholder={t('landing_request_2')} name='phoneNumber' type="tel" />
                     </div>
-                    <button>Отправить</button>
+                    <button>{t('landing_request_3')}</button>
                 </form>
             </div>
             <Question_and_answer />

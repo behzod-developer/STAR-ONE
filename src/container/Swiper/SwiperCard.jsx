@@ -1,28 +1,3 @@
-// import React, { useState } from 'react'
-
-// function SwiperCard({ item }) {
-//     const [isVisible, setIsVisible] = useState(false);
-
-//     const handleClick = () => {
-//         setIsVisible(!isVisible);
-//     };
-
-
-
-//     return (
-//         <div className={`${item.id} swiper-card `} key={item.id} onClick={handleClick}>
-//             {isVisible ? <div className={` visibleText swiper-show-card ${item.id}`}>
-//                 <h2>{item.title}</h2>
-//                 <p>{item.description}</p>
-//             </div>: null}
-//             <div className={`hiddenText ${isVisible ? 'hidden' : ''} `}>Bu ko'rinmaydi</div>
-//         </div>
-//     )
-// }
-
-// export default SwiperCard
-
-
 import React, { useState } from 'react';
 import './Swiper.css';
 import { swiper_data } from '../../database/swiper_data';

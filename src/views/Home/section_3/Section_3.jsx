@@ -6,8 +6,12 @@ import { BsBoxes } from "react-icons/bs";
 import { FaHandshake } from "react-icons/fa";
 import { FaWallet } from "react-icons/fa";
 import { FaCartFlatbed } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 function Section_3() {
+
+  const {t} = useTranslation()
+
   return (
     <div className="section_3-container">
       <div className="section_3-parent">
@@ -31,44 +35,33 @@ function Section_3() {
           </div>
           <div className="section_3-shag-text">
             <div className="section_3-div">
-              <h3>1 шаг</h3>
+              <h3>{t('landing_step_1')}</h3>
               <p>
-                <b>Юридическое оформление:</b> Откройте свой бизнес, выбрав
-                подходящую юридическую форму (ООО, ИП и т.д.) и завершите
-                необходимые регистрационные процессы.
+                <b>{t('landing_step_info_1_bold')}</b> {t('landing_step_info_1')}
               </p>
             </div>
             <div className="section_3-div">
-              <h3>2 шаг</h3>
+              <h3>{t('landing_step_2')}</h3>
               <p>
-                <b>Регистрация на маркетплейсе: </b>Зарегистрируйтесь на нашем
-                маркетплейсе, предоставив необходимую информацию о вашей
-                компании и бизнесе.
+                <b> {t('landing_step_info_2_bold')} </b>{t('landing_step_info_3')}
               </p>
             </div>
             <div className="section_3-div">
-              <h3>3 шаг</h3>
+              <h3>{t('landing_step_3')}</h3>
               <p>
-                <b>Добавление товаров:</b> Добавьте свои товары, обеспечивая
-                полную и точную информацию о каждом из них. Добавьте свои товары
-                с четкими фотографиями, подробными описаниями и указанием
-                ключевых характеристик, чтобы привлечь внимание покупателей.
+                <b>{t('landing_step_info_3_bold')}</b> {t('landing_step_info_3')}
               </p>
             </div>
             <div className="section_3-div">
-              <h3>4 шаг</h3>
+              <h3>{t('landing_step_4')}</h3>
               <p>
-                <b>Проверка и утверждение:</b> Наша команда проведет проверку
-                вашей учетной записи и товаров, гарантируя соответствие
-                стандартам безопасности.
+                <b>{t('landing_step_info_4_bold')}</b> {t('landing_step_info_4')}
               </p>
             </div>
             <div className="section_3-div">
-              <h3>5 шаг</h3>
+              <h3>{t('landing_step_5')}</h3>
               <p>
-                <b>Заработок:</b> Получайте доход от успешных продаж, следите за
-                статистикой и используйте маркетинговые инструменты для
-                максимизации вашего заработка.
+                <b>{t('landing_step_info_5_bold')}</b> {t('landing_step_info_5')}
               </p>
             </div>
           </div>

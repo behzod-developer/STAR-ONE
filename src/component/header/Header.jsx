@@ -9,11 +9,20 @@ import SwiperCard from '../../container/Swiper/SwiperCard';
 import { useTranslation } from 'react-i18next';
 
 function Header() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng.target.value);
-    };
+  const jsonData = {
+    message: t('header_main_title')
+  };
+
+  // Split the message by newline character and map to create line breaks
+  const messageWithLineBreaks = jsonData.message.split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+
   return (
     <header>
       <Navbar />
@@ -23,14 +32,14 @@ function Header() {
       <div className="header-text">
         <div className="header-first-child">
           <h1>
-            <Gradient text={t('header_main_title')} />
+            <Gradient text={messageWithLineBreaks} />
           </h1>
         </div>
         <div className="header-second-child">
-          <p>StarOne - это платформа для продавцов, производителей и дистрибьюторов, чтобы вы могли развивать свой бизнес с помощью продаж на маркетплейсе</p>
+          <p>{t('landing_header_text')}</p>
           <div className="header-btn">
-            <button>Стать продавцом</button>
-            <button>Связаться с нами</button>
+            <button>{t('landing_button_1')}</button>
+            <button>{t('landing_button_2')}</button>
           </div>
         </div>
       </div>

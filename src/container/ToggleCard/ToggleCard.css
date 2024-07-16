@@ -1,0 +1,24 @@
+.faq {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq.open .faq__answer {
+  display: block;
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__icon i {
+  margin-left: 10px;
+}
+
+.faq__answer {
+  display: none;
+  padding: 10px;
+}

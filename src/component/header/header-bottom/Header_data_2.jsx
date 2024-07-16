@@ -3,8 +3,11 @@ import { header_static_data } from '../../../database/header_data'
 
 import axios from 'axios'
 import NumberAnimation from '../../../container/NumberAnimation/NumberAnimation'
+import { useTranslation } from 'react-i18next'
 
 function Header_data_2() {
+
+    const {t} = useTranslation()
 
     const [headerStaticDatas, setHeaderStaticDatas] = useState([])
 
@@ -31,21 +34,21 @@ function Header_data_2() {
                             <h1 className='static-data-h1'>+</h1>
                             <NumberAnimation start={0} end={item.active_sellers} duration={2000} />
                         </div>
-                        <span>активных продавцов</span>
+                        <span>{t('landing_active_1')}</span>
                     </div>
                     <div className="data-array">
                         <div className="static-parent">
                             <h1 className='static-data-h1'>+</h1>
                             <NumberAnimation start={0} end={item.daily_sales} duration={2000} />
                         </div>
-                        <span>Продаж товаров в день</span>
+                        <span>{t('landing_active_2')}</span>
                     </div>
                     <div className="data-array">
                         <div className="static-parent">
                             <NumberAnimation start={0} end={item.users} duration={2000} />
                             <h1 className='static-data-h1'>%</h1>
                         </div>
-                        <span>Рост пользователей</span>
+                        <span>{t('landing_active_3')}</span>
                     </div>
                 </div>
             ))}
